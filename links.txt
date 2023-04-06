@@ -1,8 +1,8 @@
-817d754b375d2efa5619f570128e4b23
-
+API key: 817d754b375d2efa5619f570128e4b23
 
 
 Base URL: https://api.themoviedb.org/3
+
 
 Individual:
 https://api.themoviedb.org/3/movie/{movie_id}?api_key=817d754b375d2efa5619f570128e4b23
