@@ -1,12 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
-
-
 export const Header = () => {
   return (
     <header>
-
+      
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center">
