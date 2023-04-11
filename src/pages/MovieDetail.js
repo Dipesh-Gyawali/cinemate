@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const params = useParams();
   const [movie, setMovie] = useState({});
   const image = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup ;
+
+  const pageTitle = useTitle(movie.title);
 
   useEffect(() => {
     async function fetchMovie(){
@@ -43,7 +46,8 @@ export const MovieDetail = () => {
 
           <p className="my-4">
             <span className="mr-2 font-bold">Runtime:</span>
-            <span>{movie.runtime} min.</span>
+            <span>{movie.runtime} min.</span>import { useTitle } from "../hooks/useTitle";
+
           </p>
 
           <p className="my-4">
