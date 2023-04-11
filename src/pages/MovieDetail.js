@@ -18,7 +18,7 @@ export const MovieDetail = () => {
       console.log(json);
     }
     fetchMovie();
-  }, [])
+  }, [params.id])
 
   return (
     <main>
@@ -46,7 +46,7 @@ export const MovieDetail = () => {
 
           <p className="my-4">
             <span className="mr-2 font-bold">Runtime:</span>
-            <span>{movie.runtime} min.</span>import { useTitle } from "../hooks/useTitle";
+            <span>{movie.runtime} min.</span>
 
           </p>
 
